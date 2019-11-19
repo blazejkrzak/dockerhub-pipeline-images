@@ -93,10 +93,6 @@ services:
     image: adorsys/redis:5-alpine
     build:
       context: redis/alpine/5
-  redis_centos_5:
-    image: adorsys/redis:5-centos
-    build:
-      context: redis/centos/5
 
 networks:
   adorsys:
