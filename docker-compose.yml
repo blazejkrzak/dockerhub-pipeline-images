@@ -25,14 +25,6 @@ services:
     image: adorsys/ci-build:full
     build:
       context: ci-build/full
-  ci_build_light:
-    image: adorsys/ci-build:light
-    build:
-      context: ci-build/light
-  ci_build_ubi:
-    image: adorsys/ci-build:ubi
-    build:
-      context: ci-build/ubi
   ci_helm_2.10:
     image: adorsys/ci-helm:2.10
     build:
@@ -53,6 +45,14 @@ services:
     image: adorsys/ci-helm:2.14
     build:
       context: ci-helm/2.14
+  ci_helm_2.15:
+    image: adorsys/ci-helm:2.15
+    build:
+      context: ci-helm/2.15
+  ci_helm_2.16:
+    image: adorsys/ci-helm:2.16
+    build:
+      context: ci-helm/2.16
   nginx_alpine:
     image: adorsys/nginx:alpine
     build:
@@ -65,14 +65,6 @@ services:
     image: adorsys/nginx:ubi
     build:
       context: nginx/ubi
-  java_centos_11:
-    image: adorsys/java:11-centos
-    build:
-      context: java/centos/11
-  java_centos_8:
-    image: adorsys/java:8-centos
-    build:
-      context: java/centos/8
   java_ubi_11:
     image: adorsys/java:11-ubi
     build:
@@ -97,3 +89,11 @@ services:
     image: adorsys/node:12-centos
     build:
       context: node/centos/12
+  redis_alpine_5:
+    image: adorsys/redis:5-alpine
+    build:
+      context: redis/alpine/5
+  redis_centos_5:
+    image: adorsys/redis:5-centos
+    build:
+      context: redis/centos/5
