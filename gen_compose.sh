@@ -21,4 +21,9 @@ shopt -s extglob
     echo "    build:"
     echo "      context: ${BASENAME}"
   done
+
+  echo ""
+  echo "networks:"
+  echo "  adorsys:"
+  echo "    driver: bridge"
 } > docker-compose.yml

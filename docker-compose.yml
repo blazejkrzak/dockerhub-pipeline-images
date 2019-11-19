@@ -97,3 +97,7 @@ services:
     image: adorsys/redis:5-centos
     build:
       context: redis/centos/5
+
+networks:
+  adorsys:
+    driver: bridge
